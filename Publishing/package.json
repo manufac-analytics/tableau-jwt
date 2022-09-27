@@ -1,5 +1,5 @@
 {
-  "name": "tableau-jwt",
+  "name": "@manufac/tableau-jwt",
   "scripts": {
     "prestart": "tsc --build",
     "start": "node ."
