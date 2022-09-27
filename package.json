@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "pretty": "prettier --write . && sort-package-json",
+    "refresh": "rm -rf dist",
     "build": "tsc --build",
     "start": "yarn build && node -r dotenv/config dist/tsc/test.js"
   },
