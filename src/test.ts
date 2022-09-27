@@ -1,3 +1,3 @@
-import { getJWTToken } from ".";
+import { getTableauToken } from ".";
 
-console.log(getJWTToken("mgoyal@manufacanalytics.com"));
+console.log(getTableauToken("mgoyal@manufacanalytics.com"));

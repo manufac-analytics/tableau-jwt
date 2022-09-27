@@ -8,7 +8,7 @@ import { randomUUID } from "crypto";
  * @param userName 
  * @returns 
  */
-export function getJWTToken(userName: string) {  
+export function getTableauToken(userName: string) {  
   const header: JwtHeader = {
     alg: "HS256",
     kid: process.env.CONNECTED_APP_SECRET_ID, // Tableau require it in header. Ref: https://help.tableau.com/current/online/en-us/connected_apps.htm
