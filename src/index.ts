@@ -5,15 +5,15 @@ import { randomUUID } from "crypto";
 /**
  * How to encode? https://help.tableau.com/current/online/en-us/connected_apps.htm#jwt
  * How to troubleshoot? https://help.tableau.com/current/online/en-us/connected_apps_troubleshoot.htm
- * @param userName 
- * @returns 
+ * @param userName
+ * @returns
  */
-export function getTableauToken(userName: string) {  
+export function getTableauToken(userName: string) {
   const header: JwtHeader = {
     alg: "HS256",
     kid: process.env.CONNECTED_APP_SECRET_ID, // Tableau require it in header. Ref: https://help.tableau.com/current/online/en-us/connected_apps.htm
     // @ts-expect-error `iss` is needed as per Tableau docs but there is type mismatch as per `jsonwebtoken` library
-    iss: process.env.CONNECTED_APP_CLIENT_ID
+    iss: process.env.CONNECTED_APP_CLIENT_ID,
   };
   const token = sign(
     {

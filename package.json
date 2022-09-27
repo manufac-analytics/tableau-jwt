@@ -1,20 +1,23 @@
 {
   "name": "@manufac/tableau-jwt",
   "version": "0.1.0",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "main": "dist/tsc/index.js",
   "scripts": {
+    "pretty": "prettier --write . && sort-package-json",
     "prestart": "tsc --build",
     "start": "node -r dotenv/config dist/tsc/test.js"
   },
-  "license": "UNLICENSED",
-  "main": "dist/tsc/index.js",
-  "type": "commonjs",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  },
   "devDependencies": {
     "@types/jsonwebtoken": "^8.5.9",
     "dotenv": "^16.0.2",
+    "prettier": "^2.7.1",
+    "sort-package-json": "^1.57.0",
     "tslib": "^2.4.0",
     "typescript": "^4.8.2"
-  },
-  "dependencies": {
-    "jsonwebtoken": "^8.5.1"
   }
 }
