@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "pretty": "prettier --write . && sort-package-json",
-    "prestart": "tsc --build",
-    "start": "node -r dotenv/config dist/tsc/test.js"
+    "build": "tsc --build",
+    "start": "yarn build && node -r dotenv/config dist/tsc/test.js"
   },
   "dependencies": {
     "jsonwebtoken": "^8.5.1"
