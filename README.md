@@ -11,7 +11,7 @@ import { getTableauToken } from "@manufac/tableau-jwt";
 const token = getTableauToken("abc@xyz.com");
 ```
 
-#### ENV Varaibles
+#### ENV Variables
 
 Make sure to provide the following ENV variables before running the function:
 
