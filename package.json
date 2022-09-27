@@ -4,6 +4,9 @@
   "license": "UNLICENSED",
   "type": "commonjs",
   "main": "dist/tsc/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "pretty": "prettier --write . && sort-package-json",
     "prestart": "tsc --build",
