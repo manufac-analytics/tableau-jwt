@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "prestart": "tsc --build",
-    "start": "node -r dotenv/config ."
+    "start": "node -r dotenv/config dist/tsc/test.js"
   },
   "license": "UNLICENSED",
   "main": "dist/tsc/index.js",
