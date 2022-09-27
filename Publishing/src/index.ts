@@ -6,10 +6,6 @@ function getJWTToken(userName: string) {
   const secretID = "";
   const token = sign(
     {
-      /**
-       * Added scopes that were present in the reference documentation.
-       * Don't know much about what permissions they allow.
-       */
       scope: ["tableau:views:embed", "tableau:metrics:embed"],
     },
     secretID,
