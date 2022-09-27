@@ -1,5 +1,6 @@
 {
   "name": "@manufac/tableau-jwt",
+  "version": "0.1.0",
   "scripts": {
     "prestart": "tsc --build",
     "start": "node ."
