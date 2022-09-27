@@ -1,6 +1,13 @@
 {
   "name": "@manufac/tableau-jwt",
   "version": "0.1.1",
+  "bugs": {
+    "url": "https://github.com/manufac-analytics/tableau-jwt/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manufac-analytics/tableau-jwt.git"
+  },
   "license": "UNLICENSED",
   "type": "commonjs",
   "main": "dist/tsc/index.js",
