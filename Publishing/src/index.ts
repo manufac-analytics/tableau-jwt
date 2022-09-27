@@ -1,18 +1,16 @@
 import { sign } from "jsonwebtoken";
 import { randomUUID } from "crypto";
 
-function getJWTToken(secretID: string, clientID: string, userName: string) {
+function getJWTToken(userName: string) {
+  const clientID = "";
+  const secretID = "";
   const token = sign(
     {
       /**
        * Added scopes that were present in the reference documentation.
        * Don't know much about what permissions they allow.
        */
-      scope: [
-        "tableau:views:embed",
-        "tableau:metrics:embed",
-        "tableau:metrics:embed",
-      ],
+      scope: ["tableau:views:embed", "tableau:metrics:embed"],
     },
     secretID,
     {
@@ -30,4 +28,4 @@ function getJWTToken(secretID: string, clientID: string, userName: string) {
   return token;
 }
 
-getJWTToken("", "", "");
+getJWTToken("");
