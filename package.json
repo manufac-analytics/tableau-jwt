@@ -1,0 +1,18 @@
+{
+  "name": "tableau-jwt",
+  "scripts": {
+    "prestart": "tsc --build",
+    "start": "node ."
+  },
+  "license": "UNLICENSED",
+  "main": "dist/tsc/index.js",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.9",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  }
+}
